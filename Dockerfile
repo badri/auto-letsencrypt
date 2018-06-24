@@ -1,5 +1,5 @@
 FROM quay.io/letsencrypt/letsencrypt
-MAINTAINER Gordon Chan <github.com/gchan>
+MAINTAINER Lakshmi Narasimhan <lakshmi@lakshminp.com>
 
 # https://docs.docker.com/engine/installation/linux/ubuntulinux/
 RUN apt-get update && \

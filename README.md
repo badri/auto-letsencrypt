@@ -59,17 +59,14 @@ Provide a number to the `CHECK_FREQ` environment variable to adjust how often it
 docker run -d
   -e 'DOMAINS=example.com www.example.com' \
   -e EMAIL=elliot@allsafe.com \
-  -e NGINX_CONTAINER=nginx \
-  -e SERVER_CONTAINER=nginx \
   -e CERTS_PATH=/etc/nginx/certs \
-  -e WEBROOT_PATH=/var/www \
   -e CHECK_FREQ=7 \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /etc/letsencrypt:/etc/letsencrypt \
   -v /var/lib/letsencrypt:/var/lib/letsencrypt \
   -v /tmp/letsencrypt:/var/www \
   -v /etc/nginx/certs:/etc/nginx/certs \
-  gordonchan/auto-letsencrypt
+  lakshminp/letsencrypt
 ```
 
 #### An example using Docker Compose
